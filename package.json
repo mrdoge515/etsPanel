@@ -1,0 +1,26 @@
+{
+  "name": "etspanel",
+  "version": "0.1.0",
+  "description": "Control panel for ETS2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdoge515/etsPanel.git"
+  },
+  "keywords": [
+    "ets2"
+  ],
+  "author": "mrdoge515",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mrdoge515/etsPanel/issues"
+  },
+  "homepage": "https://github.com/mrdoge515/etsPanel#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "robotjs": "^0.6.0"
+  }
+}
