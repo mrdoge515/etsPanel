@@ -6,6 +6,7 @@
   <Button key="f" />
   <Button key="tab" step="3" color1="#8bd5ca" color2="#a6da95" />
   <Button key="g" step="2" color1="#8aadf4" />
+  <Button key="t" />
 </div>
 
 <style>

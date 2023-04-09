@@ -5,9 +5,10 @@
   import lightsLogo from "/icons/lights.svg";
   import lightsLongLogo from "/icons/lights-long.svg";
   import startLogo from "/icons/start.svg";
+  import trailer from "/icons/trailer.svg";
 
   export let key = "capslock";
-  export let step = 2;
+  export let step = 1;
   export let color1 = "#363a4f";
   export let color2 = "#363a4f";
 
@@ -20,7 +21,12 @@
       console.log("[!] Error: ", err)
     );
 
-    if (step == 2) {
+    if (step == 1) {
+      color = "#ed8796";
+      setTimeout(() => {
+        color = colorDef;
+      }, 1000);
+    } else if (step == 2) {
       if (currentStep == 1) {
         currentStep += 1;
         color = color1;
@@ -50,8 +56,8 @@
     <img src={lightsLogo} alt="Lights logo" />
   {:else if key == "g"}
     <img src={lightsLongLogo} alt="Long lights logo" />
-  {:else}
-    {key}
+  {:else if key == "t"}
+    <img src={trailer} alt="Trailer logo" />
   {/if}
 </button>
 
@@ -65,6 +71,8 @@
     width: 30vw;
     padding: 0;
     margin: 0;
+
+    transition: background-color ease-in-out 0.5s;
   }
   img {
     height: 20vw;
