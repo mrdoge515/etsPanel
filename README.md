@@ -49,7 +49,8 @@ Control panel that allows you to click buttons through your phone. Works with ET
 
 Lights logo: <a href="https://www.flaticon.com/free-icons/car-light" title="car light icons">Car light icons created by Freepik - Flaticon</a> <br />
 Key logo: <a href="https://www.flaticon.com/free-icons/car-key" title="car key icons">Car key icons created by Those Icons - Flaticon</a> <br />
-Trailer: <a href="https://www.flaticon.com/free-icons/truck" title="truck icons">Truck icons created by Andrejs Kirma - Flaticon</a>
+Trailer: <a href="https://www.flaticon.com/free-icons/truck" title="truck icons">Truck icons created by Andrejs Kirma - Flaticon</a> <br />
+Warning: <a href="https://www.flaticon.com/free-icons/alert" title="alert icons">Alert icons created by Freepik - Flaticon</a>
 
 ---
 

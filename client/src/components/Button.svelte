@@ -6,20 +6,34 @@
   import lightsLongLogo from "/icons/lights-long.svg";
   import startLogo from "/icons/start.svg";
   import trailer from "/icons/trailer.svg";
+  import warning from "/icons/warning.svg";
+  import save from "/icons/save.svg";
 
   export let key = "capslock";
   export let step = 1;
   export let color1 = "#363a4f";
   export let color2 = "#363a4f";
+  export let toggle = false;
 
   const colorDef = "#363a4f";
   let color = "#363a4f";
   let currentStep = 1;
+  let toggled = false;
 
   function click() {
     fetch(`http://${apiIP}/press/${key}`).catch((err) =>
       console.log("[!] Error: ", err)
     );
+
+    if (toggle == true) {
+      if (toggled == false) {
+        color = color1;
+        toggled = true;
+      } else {
+        color = colorDef;
+        toggled = false;
+      }
+    }
 
     if (step == 1) {
       color = "#ed8796";
@@ -58,6 +72,10 @@
     <img src={lightsLongLogo} alt="Long lights logo" />
   {:else if key == "t"}
     <img src={trailer} alt="Trailer logo" />
+  {:else if key == "capslock"}
+    <img src={warning} alt="Warning logo" />
+  {:else if key == "`"}
+    <img src={save} alt="Save logo" />
   {/if}
 </button>
 
